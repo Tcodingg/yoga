@@ -22,6 +22,7 @@ header {
    height: 3px;
    background: black;
    position: absolute;
+   transition: all 0.35s ease-in-out;
 }
 .burger::before {
    content: "";
@@ -29,7 +30,8 @@ header {
    width: 30px;
    height: 3px;
    background: black;
-   transform: translateY(-10px);
+   transform: translateY(-8px);
+   transition: all 0.35s ease-in-out;
 }
 .burger::after {
    content: "";
@@ -37,9 +39,19 @@ header {
    width: 30px;
    height: 3px;
    background: black;
-   transform: translateY(10px);
+   transform: translateY(8px);
+   transition: all 0.35s ease-in-out;
+}
+.burger.open {
+   background: transparent;
 }
 
+.burger.open::before {
+   transform: rotate(-45deg);
+}
+.burger.open::after {
+   transform: rotate(45deg);
+}
 .menu {
    list-style: none;
    z-index: -1;

@@ -13,7 +13,7 @@ const Nav = () => {
          <div className="header-wrapper flex">
             <h2 className="icon"> yoga</h2>
             <div onClick={handleToggle} className="burger-container">
-               <div className="burger"></div>
+               <div className={toggle ? "burger open" : "burger"}></div>
             </div>
 
             <ul className="menu">
