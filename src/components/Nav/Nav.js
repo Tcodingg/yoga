@@ -1,10 +1,18 @@
 import "./Nav.css";
+import { useState } from "react";
 const Nav = () => {
+   const [toggle, setToggle] = useState(false);
+
+   // ===toggle menu===
+   const handleToggle = () => {
+      setToggle(!toggle);
+   };
+   console.log(toggle);
    return (
       <header className="bd-container header">
          <div className="header-wrapper flex">
             <h2 className="icon"> yoga</h2>
-            <div className="burger-container">
+            <div onClick={handleToggle} className="burger-container">
                <div className="burger"></div>
             </div>
 
