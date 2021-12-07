@@ -22,6 +22,9 @@
    --text-font: 16px;
 
    --font-family: "Poppins", sans-serif;
+   --font-weight-normal: 400;
+   --font-weight-medium: 500;
+   --font-weight-semi-bold: 600;
 
    /* ===== margins ===== */
    --mg-1: 0.5rem;
@@ -35,23 +38,24 @@
 
 body {
    font-family: var(--font-family);
+   font-size: var(--text-font);
 }
 
 .title {
    font-size: var(--title-font);
    color: var(--title-color);
-   font-weight: 600;
+   font-weight: var(--font-weight-semi-bold);
 }
 
 .sub-title {
    font-size: 18px;
    color: var(--sub-title-color);
-   font-weight: 500;
+   font-weight: var(--font-weight-medium);
 }
 .text {
    font-size: 16px;
    color: var(--text-color);
-   font-weight: 400;
+   font-weight: var(--font-weight-normal);
 }
 
 .grid {
@@ -59,4 +63,10 @@ body {
 }
 .flex {
    display: flex;
+}
+.bd-container {
+   max-width: 960px;
+   width: calc(100%-2rem);
+   margin-left: var(--mb-2);
+   margin-right: var(--mb-2);
 }

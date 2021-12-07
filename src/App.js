@@ -1,5 +1,10 @@
+import Nav from "./components/Nav/Nav";
 const App = () => {
-   return <div>app is running</div>;
+   return (
+      <div>
+         <Nav />
+      </div>
+   );
 };
 
 export default App;
