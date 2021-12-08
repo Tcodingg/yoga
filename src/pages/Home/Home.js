@@ -1,5 +1,11 @@
+import Slides from "../../components/Slides/Slides";
+
 const Home = () => {
-   return <div>HOme</div>;
+   return (
+      <div>
+         <Slides />
+      </div>
+   );
 };
 
 export default Home;

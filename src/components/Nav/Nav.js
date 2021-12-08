@@ -1,4 +1,5 @@
 import "./Nav.css";
+import "../../index.css";
 import { useState } from "react";
 const Nav = () => {
    const [toggle, setToggle] = useState(false);
@@ -16,7 +17,7 @@ const Nav = () => {
                <div className={toggle ? "burger open" : "burger"}></div>
             </div>
 
-            <ul className="menu">
+            <ul className={toggle ? "menu open" : "menu"}>
                <li>
                   <a href="#">Home</a>
                </li>
