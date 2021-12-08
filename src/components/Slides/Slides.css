@@ -8,23 +8,24 @@
 .react-slick-parent .slick-prev,
 .react-slick-parent .slick-next {
    position: absolute;
+   z-index: 1;
    top: 50%;
 }
 .react-slick-parent .slick-prev {
-   color: black;
-   z-index: 1;
    left: 50px;
 }
 .react-slick-parent .slick-next {
-   color: rgb(194, 16, 16);
    right: 50px;
-   z-index: 1;
-   display: none;
 }
 
 .react-slick-parent .slick-prev:before,
 .slick-next:before {
-   color: black;
+   color: red;
+   font-size: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
 }
 .slide-wrapper {
    position: relative;
@@ -53,4 +54,32 @@
    height: 550px;
    width: 100%;
    overflow: hidden;
+}
+
+.dotsClass {
+   position: absolute;
+   list-style: none;
+   transform: translateY(-90deg);
+   bottom: -10px;
+   left: 0;
+   text-align: center;
+   width: 100%;
+   padding: 10;
+   margin: 0;
+   transform: rotate(-90deg);
+}
+
+.dotsClass button {
+   border-radius: 50%;
+   height: 20px;
+   width: 20px;
+   outline: none;
+   border: none;
+   font-size: 0;
+}
+.dotsClass .slick-active button {
+   background: red;
+}
+.dotsClass button:hover {
+   cursor: pointer;
 }

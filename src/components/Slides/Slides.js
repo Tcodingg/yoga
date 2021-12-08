@@ -14,21 +14,20 @@ const Slides = () => {
       autoplaySpeed: 6000,
       arrows: true,
       className: "react-slick-parent",
+      dotsClass: "dotsClass",
    };
    return (
-      <div className="">
-         <Slider {...settings}>
-            <div className="slide-wrapper">
-               <div className="slide-1"></div>
-            </div>
-            <div className="slide-wrapper">
-               <div className="slide-2"></div>
-            </div>
-            <div className="slide-wrapper">
-               <div className="slide-3"></div>
-            </div>
-         </Slider>
-      </div>
+      <Slider {...settings}>
+         <div className="slide-wrapper">
+            <div className="slide-1"></div>
+         </div>
+         <div className="slide-wrapper">
+            <div className="slide-2"></div>
+         </div>
+         <div className="slide-wrapper">
+            <div className="slide-3"></div>
+         </div>
+      </Slider>
    );
 };
 
