@@ -1,35 +1,56 @@
-.react__slick__slider__parent {
+.react-slick-parent {
    position: relative;
    overflow: hidden;
+   height: 550px;
+   max-height: 700px;
 }
 
-.react__slick__slider__parent .slick-prev,
-.react__slick__slider__parent .slick-next {
+.react-slick-parent .slick-prev,
+.react-slick-parent .slick-next {
    position: absolute;
    top: 50%;
 }
-.react__slick__slider__parent .slick-prev {
+.react-slick-parent .slick-prev {
    color: black;
    z-index: 1;
    left: 50px;
 }
-.react__slick__slider__parent .slick-next {
+.react-slick-parent .slick-next {
    color: rgb(194, 16, 16);
    right: 50px;
    z-index: 1;
    display: none;
 }
 
-.react__slick__slider__parent .slick-prev:before,
+.react-slick-parent .slick-prev:before,
 .slick-next:before {
    color: black;
 }
-.slide img {
-   display: block;
-   width: 100%;
-   height: auto;
-   padding: 0;
-   margin: 0;
+.slide-wrapper {
+   position: relative;
+   height: 550px;
+   overflow: hidden;
 }
-.dotsClass {
+.slide-1 {
+   background-image: url("/src//images/yoga1.jpg");
+}
+.slide-2 {
+   background-image: url("/src//images/yoga2.jpg");
+}
+.slide-3 {
+   background-image: url("/src//images/yoga3.jpg");
+}
+
+.slide-1,
+.slide-2,
+.slide-3 {
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 550px;
+   width: 100%;
+   overflow: hidden;
 }

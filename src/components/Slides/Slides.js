@@ -1,7 +1,4 @@
 import Slider from "react-slick";
-import yoga1 from "../../images/yoga1.jpg";
-import yoga2 from "../../images/yoga2.jpg";
-import yoga3 from "../../images/yoga3.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -16,19 +13,19 @@ const Slides = () => {
       autoplay: true,
       autoplaySpeed: 6000,
       arrows: true,
-      className: "react__slick__slider__parent dotsClass",
+      className: "react-slick-parent",
    };
    return (
       <div className="">
          <Slider {...settings}>
-            <div className="slide">
-               <img src={yoga1} alt="" />
+            <div className="slide-wrapper">
+               <div className="slide-1"></div>
             </div>
-            <div className="slide">
-               <img src={yoga2} alt="" />
+            <div className="slide-wrapper">
+               <div className="slide-2"></div>
             </div>
-            <div className="slide">
-               <img src={yoga3} alt="" />
+            <div className="slide-wrapper">
+               <div className="slide-3"></div>
             </div>
          </Slider>
       </div>
