@@ -12,7 +12,7 @@ const Nav = () => {
    return (
       <header className="bd-container header">
          <div className="header-wrapper flex">
-            <h2 className="icon"> yoga</h2>
+            <h2 className="logo"> yoga</h2>
             <div onClick={handleToggle} className="burger-container">
                <div className={toggle ? "burger open" : "burger"}></div>
             </div>

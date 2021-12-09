@@ -1,0 +1,19 @@
+.services {
+   flex-direction: column;
+   padding-top: var(--mg-3);
+}
+.icon-wrapper {
+   background: var(--primary-color);
+   width: 60px;
+   height: 60px;
+   padding: 0px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 30px;
+}
+.grIcon path {
+   stroke: rgb(148, 205, 116);
+}

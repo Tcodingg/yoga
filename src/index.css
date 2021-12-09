@@ -12,7 +12,7 @@
    --secondary-color: #fff;
    --text-color: #666;
    --title-color: rgba(0, 0, 0, 0.808);
-   --sub-title-color: rgb(0, 0, 0);
+   --sub-title-color: rgba(0, 0, 0, 0.609);
 
    /* ====fonts sizes and typography====== */
    --biggest-font-size: 4rem;
@@ -66,8 +66,10 @@ body {
 }
 .bd-container {
    max-width: 960px;
-   width: calc(100% - 2rem);
    padding-left: var(--mg-1);
    padding-right: var(--mg-1);
    margin: auto;
+}
+.section {
+   padding: var(--mg-4);
 }
