@@ -1,6 +1,8 @@
 import "./OurServices.css";
+import { services } from "./services";
 
 import { GiMeditation } from "react-icons/gi";
+
 const OurServices = () => {
    return (
       <section className="our-services bd-container">
@@ -9,19 +11,17 @@ const OurServices = () => {
          <h1 className="title">Our Services</h1>
          <div className="services flex">
             <div className="list-services">
-               <div>
-                  <div className="icon-wrapper">
-                     <GiMeditation />
-                  </div>
-                  <div>
-                     <div className="sub-title">Yoga</div>
-                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Expedita, culpa delectus quibusdam quasi atque
-                        libero. Ab eius est assumenda ad.
-                     </p>
-                  </div>
-               </div>
+               {services.map(({ icon, title, details }) => {
+                  return (
+                     <div className="service">
+                        <div className="icon-wrapper">{icon}</div>
+                        <div className="service-details">
+                           <div className="sub-title">{title}</div>
+                           <p>{details}</p>
+                        </div>
+                     </div>
+                  );
+               })}
             </div>
             <img src="" alt="image" />
          </div>
