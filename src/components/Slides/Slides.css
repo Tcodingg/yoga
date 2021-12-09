@@ -21,7 +21,7 @@
 
 .react-slick-parent .slick-prev:before,
 .slick-next:before {
-   color: red;
+   color: var(--primary-color);
    font-size: 50px;
    display: flex;
    justify-content: center;
@@ -72,14 +72,16 @@
 
 .dotsClass button {
    border-radius: 50%;
-   height: 20px;
-   width: 20px;
+   height: 10px;
+   width: 10px;
    outline: none;
    border: none;
    font-size: 0;
+   background-color: white;
+   border: 1px solid rgba(0, 0, 0, 0.308);
 }
 .dotsClass .slick-active button {
-   background: red;
+   border: 1px solid var(--primary-color);
 }
 .dotsClass button:hover {
    cursor: pointer;
