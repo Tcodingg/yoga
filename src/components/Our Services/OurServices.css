@@ -5,6 +5,7 @@
 .service {
    display: flex;
 }
+
 .icon-wrapper {
    background: var(--primary-color);
    width: 60px;
@@ -32,4 +33,11 @@
 .service p {
    margin: 20px 0 30px 0;
    color: var(--text-color);
+   line-height: 2rem;
+   font-size: var(--fonts-small);
+}
+
+.services img {
+   max-width: 600px;
+   height: auto;
 }

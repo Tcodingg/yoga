@@ -1,0 +1,25 @@
+.choose-yoga {
+   background-color: #f7f7f7;
+}
+.choose-yoga-container {
+   flex-direction: column;
+}
+.choose-yoga .details {
+   margin-top: 30px;
+   display: flex;
+   flex-direction: column;
+}
+.choose-yoga .details-wrapper div {
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+}
+
+.choose-yoga .details h3 {
+   text-transform: capitalize;
+   font-size: 18px;
+}
+
+.details .text {
+   display: none;
+}
