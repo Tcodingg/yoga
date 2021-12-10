@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BiPlus, BiMinus } from "react-icons/bi";
 import "./WhyChooseYoga.css";
 
 const Expandable = ({ title, details, id }) => {
@@ -8,14 +9,16 @@ const Expandable = ({ title, details, id }) => {
    }
    return (
       <div key={id} className="details-wrapper">
-         <div>
-            <h3 className="title">{title}</h3>
-            <button onClick={handleClick}>+</button>
+         <div onClick={handleClick}>
+            <p className="title">{title}</p>
+            <button>{expand ? <BiMinus /> : <BiPlus />}</button>
          </div>
          <p
             className="text"
             style={{
-               display: expand ? "block" : "none",
+               transition: "all 0.35s ease-out",
+               maxHeight: expand ? "200px" : "0px",
+               overflow: "hidden",
             }}
          >
             {details}

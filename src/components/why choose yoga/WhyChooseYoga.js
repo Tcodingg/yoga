@@ -1,18 +1,8 @@
-import { useState } from "react";
 import Expandable from "./Expandable";
 import "./WhyChooseYoga.css";
 import choose_yoga from "../../images/choose_yoga.jpg";
 import { chooseYoga } from "./chooseYoga";
 const WhyChooseYoga = () => {
-   const [itemId, setItemId] = useState(null);
-   const [expand, setExpand] = useState(false);
-   const handleClick = (id) => {
-      setItemId(id);
-      setExpand((preState) => !preState);
-   };
-   // useEffect(() => {
-   // }, [itemId]);
-
    return (
       <div className="choose-yoga bd-container">
          <div className="choose-yoga-container section flex">

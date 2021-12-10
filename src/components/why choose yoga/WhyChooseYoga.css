@@ -3,11 +3,16 @@
 }
 .choose-yoga-container {
    flex-direction: column;
+   gap: 20px;
 }
 .choose-yoga .details {
    margin-top: 30px;
    display: flex;
    flex-direction: column;
+}
+
+.yoga-info .title {
+   text-transform: capitalize;
 }
 .choose-yoga .details-wrapper div {
    display: flex;
@@ -15,11 +20,46 @@
    position: relative;
 }
 
-.choose-yoga .details h3 {
+.choose-yoga .details {
    text-transform: capitalize;
-   font-size: 18px;
+   font-weight: 400;
 }
 
-.details .text {
-   display: none;
+.details-wrapper button {
+   border: none;
+   outline: none;
+   background-color: transparent;
+   font-size: 20px;
+}
+.details-wrapper div {
+   background-color: var(--primary-color);
+   padding: 10px 15px;
+   border-radius: 20px;
+
+   display: flex;
+   align-items: center;
+}
+.details-wrapper div:hover {
+   cursor: pointer;
+}
+
+.details-wrapper button,
+.details-wrapper .title {
+   color: white;
+}
+
+.details-wrapper .title {
+   font-size: 15px;
+}
+.details-wrapper .text {
+   margin: 10px 0px 5px 10px;
+}
+.details-wrapper button {
+   transition: all 0.35s ease-in-out;
+
+   display: flex;
+   align-items: center;
+}
+.details-wrapper button:hover {
+   cursor: pointer;
 }
