@@ -1,7 +1,7 @@
 import Expandable from "./Expandable";
 import "./WhyChooseYoga.css";
 import choose_yoga from "../../images/choose_yoga.jpg";
-import { chooseYoga } from "./chooseYoga";
+import { chooseYoga } from "./chooseYogaData";
 const WhyChooseYoga = () => {
    return (
       <div className="choose-yoga bd-container">

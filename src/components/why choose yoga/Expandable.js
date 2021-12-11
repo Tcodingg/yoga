@@ -16,7 +16,7 @@ const Expandable = ({ title, details, id }) => {
          <p
             className="text"
             style={{
-               transition: "all 0.35s ease-out",
+               transition: "all 0.35s ease-in-out",
                maxHeight: expand ? "200px" : "0px",
                overflow: "hidden",
             }}
