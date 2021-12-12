@@ -28,13 +28,13 @@ const TrainersSlide = () => {
                         <img src={img} alt="...img" />
                         <div className="overlay">
                            <div className="social-media">
-                              <a href={socials.facebook}>
+                              <a href={socials.facebook} target="_blank">
                                  <RiFacebookFill />
                               </a>
-                              <a href={socials.linkedin}>
+                              <a href={socials.linkedin} target="_blank">
                                  <RiLinkedinFill />
                               </a>
-                              <a href={socials.twitter}>
+                              <a href={socials.twitter} target="_blank">
                                  <RiTwitterFill />
                               </a>
                            </div>

@@ -1,0 +1,37 @@
+.contact-us .title {
+   text-transform: capitalize;
+}
+
+.contact-us form {
+   margin-top: var(--mg-2);
+
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.contact-us form input,
+.contact-us form textarea,
+.contact-us form button {
+   font-size: 16px;
+   width: 100%;
+   border: none;
+   outline: none;
+
+   padding-left: 10px;
+   padding-top: 5px;
+   font-size: 16px;
+   border: 1px solid #e1e1e1;
+   border-radius: 5px;
+   height: 50px;
+   font-family: var(--font-family);
+}
+.contact-us form textarea {
+   height: 120px;
+   resize: vertical;
+}
+
+.contact-us form button {
+   text-transform: capitalize;
+   background: var(--primary-color);
+   color: white;
+}
