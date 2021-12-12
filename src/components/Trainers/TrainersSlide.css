@@ -7,6 +7,7 @@
    max-width: 930px;
    height: 400px;
    max-height: 600px;
+
    margin: auto;
 }
 
@@ -44,18 +45,19 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   position: inherit;
 }
 .img-container {
    position: relative;
    display: flex;
    justify-content: center;
    align-items: center;
-
    height: 200px;
    width: 200px;
    margin: auto;
    border-radius: 50%;
    background-color: rgba(0, 0, 0, 0.034);
+   overflow: hidden;
 }
 .img-container img {
    height: 180px;
@@ -68,4 +70,50 @@
 }
 .trainer-info .text {
    text-transform: capitalize;
+}
+
+.overlay {
+   background-color: #fb5b21ab;
+   height: 200px;
+   width: 200px;
+   position: absolute;
+   border-radius: 50%;
+
+   transition: all 0.5s ease-in-out;
+   top: 0;
+   left: -1000px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+}
+.social-media {
+   position: absolute;
+   display: flex;
+   gap: 10px;
+   z-index: 1000;
+}
+.social-media a {
+   color: white;
+   font-size: 20px;
+   font-weight: 600;
+   margin: none;
+   text-decoration: none;
+   opacity: 1;
+   border: 2px solid white;
+   display: flex;
+   align-items: center;
+   border-radius: 50%;
+   font-weight: bold;
+   padding: 4px;
+   transition: all 0.35s ease 0s;
+}
+
+.img-container:hover .overlay {
+   top: 0;
+   left: 0;
+}
+.social-media a:hover {
+   color: black;
+   background-color: white;
 }

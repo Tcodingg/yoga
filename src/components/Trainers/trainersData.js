@@ -9,25 +9,50 @@ export const trainersData = [
       img: trainer1,
       name: "Jasmine",
       trains: "fitness",
+      socials: {
+         facebook: "https://facebook.com",
+         linkedin: "https://www.linkedin.com",
+         twitter: "https://www.twitter.com",
+      },
    },
    {
       img: trainer2,
       name: "jenifer",
       trains: "Yoga ",
+      socials: {
+         facebook: "https://facebook.com",
+         linkedin: "https://www.linkedin.com",
+         twitter: "https://www.twitter.com",
+      },
    },
    {
       img: trainer3,
       name: "Jacob & Rebecca",
       trains: "fitness",
+      socials: {
+         facebook: "https://facebook.com",
+         linkedin: "https://www.linkedin.com",
+         twitter: "https://www.twitter.com",
+      },
    },
    {
       img: trainer4,
       name: "Kate",
       trains: "Running",
+      socials: {
+         facebook: "https://facebook.com",
+         linkedin: "https://www.linkedin.com",
+         twitter: "https://www.twitter.com",
+      },
    },
    {
       img: trainer5,
       name: "linda",
       trains: "yoga & meditation",
+      socials: {
+         facebook: "https://facebook.com",
+         linkedin: "https://www.linkedin.com",
+         twitter: "https://www.twitter.com",
+      },
    },
 ];
