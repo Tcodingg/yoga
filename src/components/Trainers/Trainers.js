@@ -1,13 +1,19 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "./TrainersSlide.css";
+import "./Trainers.css";
 import TrainersSlide from "./TrainersSlide";
 
 const Trainers = () => {
    return (
-      <div>
-         <TrainersSlide />
+      <div className="bd-container trainers">
+         <div className="section trainers-container">
+            <h1 className="title">our trainers</h1>
+            <p className="text">
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+               Possimus rem quisquam temporibus odio tempora iusto? Excepturi,
+               nostrum? Deleniti eum dolore ipsa odio quod molestias repellat.
+            </p>
+            <TrainersSlide />
+         </div>
       </div>
    );
 };

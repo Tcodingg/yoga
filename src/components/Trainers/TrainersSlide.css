@@ -1,3 +1,6 @@
+.trainers-slide-container {
+   margin-top: var(--mg-4);
+}
 .trainers-slide {
    position: relative;
    overflow: hidden;
@@ -11,14 +14,14 @@
 .trainers-slide .slick-next {
    position: absolute;
    z-index: 1;
-   top: 40%;
+   top: 23%;
 }
 
 .trainers-slide .slick-prev {
-   left: 20px;
+   left: 7px;
 }
 .trainers-slide .slick-next {
-   right: 20px;
+   right: 8px;
 }
 
 .trainers-slide .slick-prev:before,
@@ -29,6 +32,7 @@
    justify-content: center;
    align-items: center;
    flex-direction: row;
+   font-size: 40px;
 }
 
 .trainers-slide-wrapper {
@@ -47,14 +51,14 @@
    justify-content: center;
    align-items: center;
 
-   height: 300px;
-   width: 300px;
+   height: 200px;
+   width: 200px;
    margin: auto;
    border-radius: 50%;
    background-color: rgba(0, 0, 0, 0.034);
 }
 .img-container img {
-   height: 250px;
+   height: 180px;
 }
 .trainer-info {
    margin-top: 20px;

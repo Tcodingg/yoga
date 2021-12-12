@@ -14,6 +14,9 @@
 .yoga-info .title {
    text-transform: capitalize;
 }
+.yoga-info .text {
+   margin-top: var(--mg-1);
+}
 .choose-yoga .details-wrapper div {
    display: flex;
    justify-content: space-between;

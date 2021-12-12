@@ -18,21 +18,23 @@ const TrainersSlide = () => {
       //   dotsClass: "dotsClass",
    };
    return (
-      <Slider {...settings}>
-         {trainersData.map(({ img, name, trains }) => {
-            return (
-               <div className="trainers-slide-wrapper">
-                  <div className="img-container">
-                     <img src={img} alt="...img" />
+      <div className="trainers-slide-container">
+         <Slider {...settings}>
+            {trainersData.map(({ img, name, trains }) => {
+               return (
+                  <div className="trainers-slide-wrapper">
+                     <div className="img-container">
+                        <img src={img} alt="...img" />
+                     </div>
+                     <div className="trainer-info">
+                        <h1 className="title">{name}</h1>
+                        <p className="text">{trains}</p>
+                     </div>
                   </div>
-                  <div className="trainer-info">
-                     <h1 className="title">{name}</h1>
-                     <p className="text">{trains}</p>
-                  </div>
-               </div>
-            );
-         })}
-      </Slider>
+               );
+            })}
+         </Slider>
+      </div>
    );
 };
 

@@ -1,0 +1,6 @@
+.trainers-container .title {
+   text-transform: capitalize;
+}
+.trainers-container .text {
+   margin-top: var(--mg-1);
+}
