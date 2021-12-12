@@ -35,3 +35,9 @@
    background: var(--primary-color);
    color: white;
 }
+
+.contact-wrapper {
+   display: flex;
+   flex-direction: column;
+   gap: var(--mg-6);
+}

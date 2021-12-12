@@ -7,7 +7,7 @@ import WhyChooseYoga from "../../components/why choose yoga/WhyChooseYoga";
 
 const Home = () => {
    return (
-      <div className="home bd-container">
+      <div>
          <Slides />
          <OurServices />
          <WhyChooseYoga />
