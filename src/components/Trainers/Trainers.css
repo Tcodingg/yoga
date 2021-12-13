@@ -4,3 +4,19 @@
 .trainers-container .text {
    margin-top: var(--mg-1);
 }
+
+/* ==== media query 800px ==== */
+@media screen and (min-width: 800px) {
+   .trainers-container {
+      width: 100%;
+   }
+   .trainers-container .title {
+      text-align: center;
+   }
+   .trainers-container .trainers-details {
+      text-align: center;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}

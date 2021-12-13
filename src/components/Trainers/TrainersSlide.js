@@ -10,13 +10,30 @@ const TrainersSlide = () => {
       dots: true,
       infinite: true,
       speed: 400,
-      slidesToShow: 1,
-      slidesToScroll: 1,
+      slidesToShow: 3,
+      slidesToScroll: 3,
       autoplay: true,
       autoplaySpeed: 6000,
       arrows: true,
       className: "trainers-slide",
       //   dotsClass: "dotsClass",
+      responsive: [
+         {
+            breakpoint: 840,
+            settings: {
+               slidesToShow: 2,
+               slidesToScroll: 2,
+               initialSlide: 2,
+            },
+         },
+         {
+            breakpoint: 480,
+            settings: {
+               slidesToShow: 1,
+               slidesToScroll: 1,
+            },
+         },
+      ],
    };
    return (
       <div className="trainers-slide-container">
