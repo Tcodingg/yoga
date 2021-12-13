@@ -10,7 +10,10 @@
    display: flex;
    flex-direction: column;
 }
-
+.yoga-info {
+   /* flex-shrink: 0; */
+   /* border: 1px solid black; */
+}
 .yoga-info .title {
    text-transform: capitalize;
 }
@@ -65,4 +68,19 @@
 }
 .details-wrapper button:hover {
    cursor: pointer;
+}
+.choose-yoga-container img {
+   max-width: 600px;
+   height: auto;
+}
+
+/* ==== ipad media query ==== */
+
+@media screen and (min-width: 800px) {
+   .choose-yoga-container {
+      flex-direction: row;
+   }
+   .choose-yoga-container img {
+      max-height: 300px;
+   }
 }

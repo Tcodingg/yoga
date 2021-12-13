@@ -1,14 +1,14 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "./Map.css";
-const position = [43.653225, -79.383186];
 
 const Map = () => {
+   const position = [43.653225, -79.383186];
    return (
       <div id="map">
          <MapContainer
             className="leaflet-container"
             center={position}
-            zoom={14}
+            zoom={15}
             // scrollWheelZoom={false}
          >
             <TileLayer
@@ -17,7 +17,8 @@ const Map = () => {
             />
             <Marker position={position}>
                <Popup>
-                  A pretty CSS3 popup. <br /> Easily customizable.
+                  123 Main St. Toronto Ontario <br />
+                  Come visit us.
                </Popup>
             </Marker>
          </MapContainer>

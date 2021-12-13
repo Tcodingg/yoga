@@ -8,8 +8,8 @@
 
 .icon-wrapper {
    background: var(--primary-color);
-   width: 60px;
-   height: 60px;
+   width: 50px;
+   height: 50px;
    padding: 0px;
    border-radius: 50%;
    display: flex;
@@ -40,4 +40,18 @@
 .services img {
    max-width: 600px;
    height: auto;
+}
+
+/* ===== ipad/kindle media query===== */
+
+@media screen and (min-width: 800px) {
+   .services {
+      flex-direction: row;
+      justify-content: space-between;
+   }
+   .services img {
+      margin: 0;
+      padding: 0;
+      max-height: 400px;
+   }
 }
