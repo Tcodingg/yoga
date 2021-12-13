@@ -8,7 +8,6 @@ const Pricing = () => {
             <p className="text">
                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                Veritatis veniam id quaerat fugit error molestiae alias atque
-               eligendi. Veniam, nemo.
             </p>
             <div className="our-plans">
                {pricingData.map(({ type, cost, features }) => {
