@@ -4,6 +4,7 @@
 }
 .service {
    display: flex;
+   gap: 20px;
 }
 
 .icon-wrapper {
@@ -38,10 +39,12 @@
 }
 
 .services img {
-   max-width: 600px;
+   width: 100%;
    height: auto;
 }
-
+.services-img-container {
+   width: 100%;
+}
 /* ===== ipad/kindle media query===== */
 
 @media screen and (min-width: 800px) {
@@ -49,9 +52,11 @@
       flex-direction: row;
       justify-content: space-between;
    }
-   .services img {
-      margin: 0;
-      padding: 0;
-      max-height: 400px;
+
+   .list-services {
+      width: 50%;
+   }
+   .services-img-container {
+      width: 50%;
    }
 }

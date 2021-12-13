@@ -21,7 +21,9 @@ const OurServices = () => {
                      );
                   })}
                </div>
-               <img src={meditate} alt="...loading" />
+               <div className="services-img-container">
+                  <img src={meditate} alt="...loading" />
+               </div>
             </div>
          </div>
       </section>

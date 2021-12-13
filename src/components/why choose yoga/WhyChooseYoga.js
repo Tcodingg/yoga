@@ -7,7 +7,7 @@ const WhyChooseYoga = () => {
       <div className="choose-yoga bd-container">
          <div className="choose-yoga-container section flex">
             <div className="yoga-info">
-               <div>
+               <div className="yoga-info-details">
                   <h1 className="title">why choose yoga</h1>
                   <p className="text">
                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -27,7 +27,9 @@ const WhyChooseYoga = () => {
                   </div>
                </div>
             </div>
-            <img src={choose_yoga} alt="...loading" />
+            <div className="choose-yoga-img-container">
+               <img src={choose_yoga} alt="...loading" />
+            </div>
          </div>
       </div>
    );
