@@ -8,9 +8,6 @@ footer {
 .footer-content {
    gap: var(--mg-6);
    grid-template-rows: 1fr 1fr;
-
-   height: fit-content;
-   max-height: 300px;
 }
 
 .footer-content-right {
@@ -26,6 +23,7 @@ footer {
 
 .footer-content-right ul li {
    list-style: none;
+   line-height: 30px;
 }
 .footer-content h1 {
    text-transform: capitalize;
