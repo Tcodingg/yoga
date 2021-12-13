@@ -3,7 +3,7 @@ const Footer = () => {
    return (
       <footer className="footer ">
          <div className="footer-container bd-container">
-            <div className="footer-content  grid section">
+            <div className="footer-content section grid ">
                <div className="footer-content-left">
                   <h1>yoga studio</h1>
                   <p>
@@ -54,7 +54,7 @@ const Footer = () => {
                </div>
             </div>
             <div className="footer-bottom">
-               <p>Copyright 2021 YogaStudio. All rights reserved</p>
+               <p>Copyright 2021 Yoga Studio. All rights reserved</p>
             </div>
          </div>
       </footer>

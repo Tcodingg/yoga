@@ -30,11 +30,14 @@ footer {
 .footer-content h1 {
    text-transform: capitalize;
 }
-.footer-bottom {
+.footer-bottom p {
+   font-size: 12px;
+   margin-bottom: var(--mg-1);
 }
 
 @media screen and (min-width: 800px) {
    .footer-content {
+      grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr;
    }
 }
