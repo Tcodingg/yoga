@@ -91,3 +91,12 @@ header {
    font-weight: var(--font-weight-semi-bold);
    text-transform: uppercase;
 }
+
+/* ==== media queries @800px==== */
+
+@media screen and (min-width: 701px) {
+   .menu {
+      position: relative;
+      flex-direction: row;
+   }
+}
