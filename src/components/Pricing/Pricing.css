@@ -119,6 +119,7 @@
    .pricing-container .title {
       max-width: 500px;
       margin: auto;
+      text-align: center;
    }
    .our-plans {
       flex-direction: row;
