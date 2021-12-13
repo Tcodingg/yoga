@@ -65,7 +65,7 @@ body {
    display: flex;
 }
 .bd-container {
-   max-width: 960px;
+   max-width: 1200px;
    padding-left: var(--mg-1);
    padding-right: var(--mg-1);
    margin: auto;
