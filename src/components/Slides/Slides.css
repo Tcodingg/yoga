@@ -86,3 +86,29 @@
 .dotsClass button:hover {
    cursor: pointer;
 }
+
+@media screen and (min-width: 800px) {
+   .react-slick-parent {
+      position: relative;
+      overflow: hidden;
+      height: 850px;
+
+      z-index: 10;
+   }
+   .slide-wrapper {
+      height: 850px;
+   }
+   .slide-1,
+   .slide-2,
+   .slide-3 {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 800px;
+      width: 100%;
+      overflow: hidden;
+   }
+}
