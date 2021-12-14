@@ -20,7 +20,7 @@
 }
 
 .react-slick-parent .slick-prev:before,
-.slick-next:before {
+.react-slick-parent .slick-next:before {
    color: var(--primary-color);
    font-size: 50px;
    display: flex;
@@ -29,6 +29,7 @@
    flex-direction: row;
    visibility: hidden;
 }
+
 .slide-wrapper {
    position: relative;
    height: 550px;
@@ -163,7 +164,7 @@
       overflow: hidden;
    }
    .react-slick-parent .slick-prev:before,
-   .slick-next:before {
+   .react-slick-parent .slick-next:before {
       visibility: visible;
    }
 }
