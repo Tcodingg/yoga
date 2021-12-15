@@ -18,6 +18,7 @@ const Slides = () => {
       autoplay: true,
       autoplaySpeed: 6000,
       arrows: true,
+      pauseOnHover: false,
       className: "react-slick-parent",
       dotsClass: "dotsClass",
       beforeChange: (state) => setBeforeAll(state),
@@ -34,8 +35,8 @@ const Slides = () => {
          visibility: "visible",
          translateX: "0px",
          transition: {
-            ease: "linear",
-            delay: 0.1,
+            ease: "easeInOut",
+            delay: 0.3,
             duration: 0.8,
          },
       },
@@ -52,7 +53,7 @@ const Slides = () => {
          visibility: "visible",
          translateX: "0px",
          transition: {
-            ease: "linear",
+            ease: "easeInOut",
             delay: 0.5,
             duration: 0.8,
          },
@@ -70,7 +71,7 @@ const Slides = () => {
          visibility: "visible",
          translateX: "0px",
          transition: {
-            ease: "linear",
+            ease: "easeInOut",
             delay: 0.7,
             duration: 0.8,
          },

@@ -167,4 +167,13 @@
    .react-slick-parent .slick-next:before {
       visibility: visible;
    }
+   .slides-content h1 {
+      font-size: 35px;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .slides-content h1 {
+      font-size: 62px;
+   }
 }
