@@ -1,6 +1,7 @@
 import "./Nav.css";
 import "../../index.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Nav = () => {
    const [toggle, setToggle] = useState(false);
 
@@ -10,22 +11,24 @@ const Nav = () => {
    };
    console.log(toggle);
    return (
-      <header className="bd-container header">
-         <div className="header-wrapper flex">
-            <h2 className="logo"> yoga studio</h2>
+      <header className=" header">
+         <div className="header-wrapper bd-container flex">
+            <a className="logo" href="##">
+               yoga <span>studio</span>
+            </a>
 
             <ul className={toggle ? "menu open" : "menu"}>
-               <li>
-                  <a href="#">Home</a>
+               <li onClick={() => setToggle(false)}>
+                  <Link to={"/"}>Home</Link>
                </li>
-               <li>
+               <li onClick={() => setToggle(false)}>
                   <a href="#">Trainers</a>
                </li>
-               <li>
+               <li onClick={() => setToggle(false)}>
                   <a href="#">Contact</a>
                </li>
-               <li>
-                  <a href="#">About</a>
+               <li onClick={() => setToggle(false)}>
+                  <Link to={"/about"}>About</Link>
                </li>
             </ul>
             <div onClick={handleToggle} className="burger-container">
