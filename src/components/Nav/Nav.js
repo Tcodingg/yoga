@@ -13,9 +13,6 @@ const Nav = () => {
       <header className="bd-container header">
          <div className="header-wrapper flex">
             <h2 className="logo"> yoga studio</h2>
-            <div onClick={handleToggle} className="burger-container">
-               <div className={toggle ? "burger open" : "burger"}></div>
-            </div>
 
             <ul className={toggle ? "menu open" : "menu"}>
                <li>
@@ -31,6 +28,9 @@ const Nav = () => {
                   <a href="#">About</a>
                </li>
             </ul>
+            <div onClick={handleToggle} className="burger-container">
+               <div className={toggle ? "burger open" : "burger"}></div>
+            </div>
          </div>
       </header>
    );

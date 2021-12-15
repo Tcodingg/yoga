@@ -1,5 +1,6 @@
 header {
    height: 3.5rem;
+   position: relative;
 }
 .header-wrapper {
    background-color: #fff;
@@ -57,12 +58,9 @@ header {
    transform: rotate(45deg);
 }
 .menu {
-   list-style: none;
-
    display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+   list-style: none;
+   display: flex;
    gap: 30px;
    background-color: var(--secondary-color);
    z-index: 100;
@@ -77,12 +75,15 @@ header {
       position: absolute;
       height: calc(100vh - 3.5rem);
       width: 100%;
-      top: -1000px;
-      left: 0;
+      top: 3.5rem;
+      left: 1500px;
       transition: all 0.35s ease-in-out;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
    }
    .menu.open {
-      top: 3.5rem;
+      left: 0;
    }
 }
 .menu a {
