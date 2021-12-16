@@ -17,18 +17,18 @@ const Nav = () => {
                yoga <span>studio</span>
             </a>
 
-            <ul className={toggle ? "menu open" : "menu"}>
+            <ul className={toggle ? "menu open" : "menu close"}>
                <li onClick={() => setToggle(false)}>
-                  <Link to={"/"}>Home</Link>
+                  <Link to="/">Home</Link>
                </li>
                <li onClick={() => setToggle(false)}>
-                  <a href="#">Trainers</a>
+                  <Link to="/">Trainers</Link>
                </li>
                <li onClick={() => setToggle(false)}>
-                  <a href="#">Contact</a>
+                  <Link to="/">Contact</Link>
                </li>
                <li onClick={() => setToggle(false)}>
-                  <Link to={"/about"}>About</Link>
+                  <Link to="/about">About</Link>
                </li>
             </ul>
             <div onClick={handleToggle} className="burger-container">

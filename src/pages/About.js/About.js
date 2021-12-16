@@ -7,7 +7,7 @@ const About = () => {
          <div className="about-general-info section">
             <div className="about-info">
                <h1 className="">
-                  About Yoga <span>studio</span>
+                  Yoga <span>studio</span>
                </h1>
                <p className="text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
