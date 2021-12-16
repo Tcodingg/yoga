@@ -3,8 +3,12 @@ footer {
    display: flex;
    flex-direction: column;
    background-color: #f7f7f7;
+   /* margin-top: 500px; */
 }
-
+.footer-container {
+   /* position: absolute;
+   bottom: 0; */
+}
 .footer-content {
    gap: var(--mg-6);
    grid-template-rows: 1fr 1fr;
