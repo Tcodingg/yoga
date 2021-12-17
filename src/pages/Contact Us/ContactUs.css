@@ -15,8 +15,24 @@
    width: 50%;
 }
 .contact-left-content {
+   margin-top: 3.5rem;
    height: auto;
    width: 50%;
    display: block;
    flex: 1;
+}
+
+@media (max-width: 700px) {
+   .contact-container {
+      flex-direction: column;
+   }
+
+   .contact-right-content,
+   .contact-left-content {
+      width: 100%;
+   }
+
+   .contact-left-content {
+      margin-top: 0;
+   }
 }

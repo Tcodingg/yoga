@@ -25,7 +25,7 @@ const Nav = () => {
                   <Link to="/">Trainers</Link>
                </li>
                <li onClick={() => setToggle(false)}>
-                  <Link to="/">Contact</Link>
+                  <Link to="/contact">Contact</Link>
                </li>
                <li onClick={() => setToggle(false)}>
                   <Link to="/about">About</Link>

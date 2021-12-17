@@ -4,7 +4,7 @@ import "./Map.css";
 const Map = () => {
    const position = [43.653225, -79.383186];
    return (
-      <div id="map">
+      <div className="map section" id="map">
          <MapContainer
             className="leaflet-container"
             center={position}

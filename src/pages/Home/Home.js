@@ -13,7 +13,6 @@ const Home = () => {
          <WhyChooseYoga />
          <Pricing />
          <Trainers />
-         <Form />
       </div>
    );
 };
