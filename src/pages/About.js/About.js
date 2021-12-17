@@ -1,6 +1,7 @@
 import img1 from "../../images/about-right-img.png";
 import { FaCheck } from "react-icons/fa";
 import "./About.css";
+import WhyChooseYoga from "../../components/why choose yoga/WhyChooseYoga";
 const About = () => {
    return (
       <section className="bd-container about">
@@ -55,6 +56,9 @@ const About = () => {
             <div className="about-img-container">
                <img src={img1} alt="" />
             </div>
+         </div>
+         <div className="section why-choose-yoga">
+            <WhyChooseYoga />
          </div>
       </section>
    );

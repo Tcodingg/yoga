@@ -13,7 +13,6 @@ const Form = () => {
                <textarea name="message" placeholder="Message"></textarea>
                <button>send message</button>
             </form>
-            <Map />
          </div>
       </div>
    );

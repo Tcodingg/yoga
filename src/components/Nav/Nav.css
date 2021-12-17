@@ -92,16 +92,15 @@ header {
       height: calc(100vh - 3.5rem);
       width: 100%;
       top: 3.5rem;
-      left: 0;
-      transform: translateX(1000px);
+      left: 1000px;
+
       transition: all 0.35s ease-in-out;
       flex-direction: column;
       justify-content: center;
       align-items: center;
    }
    .menu.open {
-      /* left: 0; */
-      transform: translateX(0);
+      left: 0;
    }
    /* .menu.close {
       left: 1000px;
