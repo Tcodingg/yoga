@@ -1,0 +1,31 @@
+.trainers-content {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.trainers-content .right-trainers-content {
+   flex: 3;
+}
+
+.trainers-content .left-trainers-content {
+   height: auto;
+   flex: 1;
+}
+
+.trainers-content .left-trainers-content img {
+   width: 100%;
+   display: block;
+   height: 100%;
+}
+
+/* ==== media queries 700px */
+@media (min-width: 700px) {
+   .trainers-content {
+      flex-direction: row;
+   }
+   .trainers-content:nth-child(even) {
+      flex-direction: row-reverse;
+   }
+}
