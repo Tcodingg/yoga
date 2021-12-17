@@ -9,9 +9,9 @@ const Form = () => {
       message: "",
    });
 
-   const [invalidName, setInvalidName] = useState(null);
-   const [invalidEmail, setInvalidEmail] = useState(null);
-   const [invalidPhone, setInvalidPhone] = useState(null);
+   const [isValidName, setIsValidName] = useState(null);
+   const [isValidEmail, setIsValidEmail] = useState(null);
+   const [isValidPhone, setIsValidPhone] = useState(null);
 
    const handleInput = (e) => {
       const { name, value } = e.target;
@@ -20,40 +20,63 @@ const Form = () => {
 
    // input values
    const name = input.name;
-   const email = input.email;
-   let phone = input.phone.replace(/[^A-Z0-9]/gi, "");
+   const email = input.email.trim();
+   let phone = input.phone.toString().replace(/\D/g, "").substring(0, 10);
    const regexp =
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+   // display phone input value
+   const [phoneValue, setPhoneValue] = useState("");
+   useEffect(() => {
+      let input = phone;
+
+      var size = input.length;
+      if (size > 0) {
+         input = "(" + input;
+      }
+      if (size > 3) {
+         input = input.slice(0, 4) + ") " + input.slice(4);
+      }
+      if (size > 6) {
+         input = input.slice(0, 9) + "-" + input.slice(9);
+      }
+      return setPhoneValue(input);
+   }, [phone]);
+   // validate input fields
    useEffect(() => {
       function validateInput() {
          // validate name
          name.length === 0
-            ? setInvalidName(null)
+            ? setIsValidName(null)
             : name.length > 4
-            ? setInvalidName(true)
-            : setInvalidName(false);
+            ? setIsValidName(true)
+            : setIsValidName(false);
 
          // validate phone
-         phone.length === 0
-            ? setInvalidPhone(null)
-            : phone.length === 10
-            ? setInvalidPhone(true)
-            : setInvalidPhone(false);
+         phoneValue.length === 0
+            ? setIsValidPhone(null)
+            : phoneValue.length === 14
+            ? setIsValidPhone(true)
+            : setIsValidPhone(false);
          // validate email
          email.length === 0
-            ? setInvalidEmail(null)
+            ? setIsValidEmail(null)
             : regexp.test(email)
-            ? setInvalidEmail(true)
-            : setInvalidEmail(false);
+            ? setIsValidEmail(true)
+            : setIsValidEmail(false);
       }
       validateInput();
-   }, [input]);
+   }, [input, phoneValue]);
    const submitInput = (e) => {
       e.preventDefault();
-      console.log(input);
+      if (isValidEmail && isValidEmail && isValidPhone) {
+         console.log("reload");
+      } else {
+         console.log("not valid inputs");
+      }
    };
-   console.log(invalidEmail, invalidName, invalidPhone);
+   console.log(phoneValue.length);
+   console.log(isValidEmail, isValidName, isValidPhone);
 
    return (
       <div className=" bd-container contact-us section">
@@ -68,7 +91,7 @@ const Form = () => {
                      placeholder="Name *"
                      value={input.name}
                   />
-                  {invalidName === false ? (
+                  {isValidName === false ? (
                      <small style={{ color: "red" }}>
                         Please enter a valid name.
                      </small>
@@ -84,7 +107,7 @@ const Form = () => {
                      placeholder="Email *"
                      value={input.email}
                   />
-                  {invalidEmail === false ? (
+                  {isValidEmail === false ? (
                      <small style={{ color: "red" }}>
                         Please enter a valid Email.
                      </small>
@@ -98,9 +121,9 @@ const Form = () => {
                      name="phone"
                      type="text"
                      placeholder="Phone *"
-                     value={input.phone}
+                     value={phoneValue}
                   />
-                  {invalidPhone === false ? (
+                  {isValidPhone === false ? (
                      <small style={{ color: "red" }}>
                         Please enter valid phone number.
                      </small>
