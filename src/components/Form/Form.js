@@ -66,13 +66,20 @@ const Form = () => {
             : setIsValidEmail(false);
       }
       validateInput();
-   }, [input, phoneValue]);
+   }, [input.name, input.phone, input.email, phoneValue]);
    const submitInput = (e) => {
       e.preventDefault();
       if (isValidEmail && isValidEmail && isValidPhone) {
-         console.log("reload");
-      } else {
-         console.log("not valid inputs");
+         window.location.reload();
+      }
+      if (!isValidName) {
+         setIsValidName(false);
+      }
+      if (!isValidEmail) {
+         setIsValidEmail(false);
+      }
+      if (!isValidPhone) {
+         setIsValidPhone(false);
       }
    };
    console.log(phoneValue.length);
@@ -125,7 +132,7 @@ const Form = () => {
                   />
                   {isValidPhone === false ? (
                      <small style={{ color: "red" }}>
-                        Please enter valid phone number.
+                        Please enter a valid phone number.
                      </small>
                   ) : (
                      ""
