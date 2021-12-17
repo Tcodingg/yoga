@@ -46,3 +46,13 @@
    flex-direction: column;
    gap: var(--mg-6);
 }
+
+.input-container {
+   position: relative;
+}
+.input-container small {
+   position: absolute;
+   left: 5px;
+   bottom: -18px;
+   font-size: 12px;
+}
