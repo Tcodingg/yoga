@@ -9,7 +9,6 @@ const Nav = () => {
    const handleToggle = () => {
       setToggle(!toggle);
    };
-   console.log(toggle);
    return (
       <header className=" header">
          <div className="header-wrapper bd-container flex">

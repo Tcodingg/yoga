@@ -82,8 +82,6 @@ const Form = () => {
          setIsValidPhone(false);
       }
    };
-   console.log(phoneValue.length);
-   console.log(isValidEmail, isValidName, isValidPhone);
 
    return (
       <div className=" bd-container contact-us section">
