@@ -13,9 +13,9 @@ const Nav = () => {
    return (
       <header className=" header">
          <div className="header-wrapper bd-container flex">
-            <a className="logo" href="##">
+            <Link to="/" className="logo">
                yoga <span>studio</span>
-            </a>
+            </Link>
 
             <ul className={toggle ? "menu open" : "menu close"}>
                <li onClick={() => setToggle(false)}>
