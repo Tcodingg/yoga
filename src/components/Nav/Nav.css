@@ -79,6 +79,24 @@ header {
    background-color: black;
    z-index: 100;
 }
+.menu li {
+   position: relative;
+}
+.menu li:after {
+   content: "";
+   position: absolute;
+   background: var(--primary-color);
+   width: 0%;
+   height: 2px;
+   left: 0;
+   bottom: -1px;
+   border-radius: 2px;
+   transition: all 0.35s ease-out;
+}
+
+.menu li:hover:after {
+   width: 100%;
+}
 
 /* ==== menu media query ===== */
 @media screen and (max-width: 700px) {
